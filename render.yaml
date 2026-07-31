@@ -6,6 +6,7 @@ services:
     name: commerce-ops-mcp
     runtime: node
     plan: free
+    region: singapore   # co-located with the Neon database to minimize query latency
     buildCommand: npm install
     startCommand: npm start
     healthCheckPath: /healthz
