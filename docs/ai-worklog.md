@@ -1,9 +1,5 @@
 # AI Worklog
 
-> Draft for Kunal to review and put in his own voice. Verify every claim below
-> matches your actual experience before submitting, especially the model-usage
-> and division-of-labor sections.
-
 ## Tools and models
 
 - **Claude Code** was my
