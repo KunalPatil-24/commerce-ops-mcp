@@ -1,0 +1,14 @@
+# Render Blueprint: one free web service running the MCP server.
+# The database is a separate free Neon Postgres; paste its connection string
+# into the DATABASE_URL env var when Render prompts (sync: false keeps it secret).
+services:
+  - type: web
+    name: commerce-ops-mcp
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: DATABASE_URL
+        sync: false
